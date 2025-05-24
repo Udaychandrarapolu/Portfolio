@@ -1,0 +1,79 @@
+/* === Overview Section === */
+.overview {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f1f5f9;
+  padding: 4rem 2rem;
+}
+
+.overview-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* === img container === */
+.overview-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 250px;
+  min-height: 250px;
+
+}
+
+/* === img === */
+.overview-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+  background-color: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* === Text Content === */
+.overview-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.overview-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+.overview-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* === Responsiveness === */
+@media screen and (max-width: 1024px) {
+  .overview-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .overview-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .overview-text {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overview-image {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
